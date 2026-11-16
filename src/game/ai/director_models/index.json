@@ -1,0 +1,34 @@
+[
+ {
+  "name": "softmax_regression",
+  "params": 68,
+  "accuracy": 0.6719444444444445,
+  "macro_f1": 0.5695447191165607,
+  "mean_regret": 1.0951733589172363,
+  "policy_death_rate": 0.19018229842185974
+ },
+ {
+  "name": "mlp_small",
+  "params": 1140,
+  "accuracy": 0.7593055555555556,
+  "macro_f1": 0.7069953815515332,
+  "mean_regret": 0.38211289048194885,
+  "policy_death_rate": 0.1756163239479065
+ },
+ {
+  "name": "mlp_medium",
+  "params": 7460,
+  "accuracy": 0.77,
+  "macro_f1": 0.7263275400068192,
+  "mean_regret": 0.37251341342926025,
+  "policy_death_rate": 0.17991319298744202
+ },
+ {
+  "name": "mlp_deep_bn",
+  "params": 30436,
+  "accuracy": 0.7698611111111111,
+  "macro_f1": 0.7247560497894127,
+  "mean_regret": 0.3763597309589386,
+  "policy_death_rate": 0.1820225715637207
+ }
+]

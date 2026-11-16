@@ -1,0 +1,43 @@
+{
+  "name": "nightfall",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "deploy": "tsc --noEmit && cf deploy",
+    "deploy:dry": "cf deploy --dry-run",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx tests/logic.test.ts && tsx tests/combat.test.ts",
+    "ml:setup": "cd ml && uv venv --python 3.12 .venv && uv pip install --python .venv/Scripts/python.exe \"tensorflow>=2.16,<2.21\" scikit-learn pandas matplotlib numpy",
+    "ml:data": "cd ml && .venv/Scripts/python.exe make_dataset.py",
+    "ml:switch": "cd ml && .venv\\Scripts\\python.exe switch_model.py",
+    "ml:train": "cd ml && .venv/Scripts/python.exe train.py",
+    "test:e2e": "node tests/e2e.mjs",
+    "test:combat-e2e": "node tests/combat-e2e.mjs"
+  },
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "lucide-react": "^1.57.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^2.0.0-beta.v.11",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "cf": "^0.15.0",
+    "playwright-core": "^1.64.1",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4"
+  }
+}
