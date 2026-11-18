@@ -1,4 +1,4 @@
-# NIGHTFALL — *The hospital remembers*
+# NIGHTFALL
 
 A compact first-person horror game that runs in a desktop browser. You wake up in the
 reception of an abandoned hospital during a power failure. The main exit is locked, and
